@@ -13,7 +13,7 @@ Send each app's sound to **one ear** of your headphones. Discord on the right, y
 * Up to **5 apps per ear**. Drag an `.exe` or shortcut onto an ear, or pick apps in the *Applications* tab. One volume slider per ear.
 
 ## Build
-Install once: Visual Studio 2022 (Desktop development with C++), CMake 3.24+, Qt 6.5+ (MSVC 2022 64-bit) and [Inno Setup 6](https://jrsoftware.org/isdl.php).
+Install once: Visual Studio 2022/2026 (Desktop development with C++), CMake 3.24+, Qt 6.5+ (MSVC 2022 64-bit) and [Inno Setup 6](https://jrsoftware.org/isdl.php).
 
 Open **CMD** or **PowerShell**, go to the project folder and run (use your own paths):
 ```
