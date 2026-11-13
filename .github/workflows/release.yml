@@ -1,0 +1,51 @@
+name: Release (portable)
+
+# Push a tag like v1.0.0 and the portable zip is built and attached to a GitHub Release.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.7.3'
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_msvc2022_64'
+          cache: true
+
+      - name: Install Inno Setup 6
+        shell: pwsh
+        run: choco install innosetup --no-progress -y
+
+      - name: Build, test, setup + portable
+        shell: cmd
+        run: |
+          set "VER=${{ github.ref_name }}"
+          if "%VER:~0,1%"=="v" set "VER=%VER:~1%"
+          call scripts\package.bat -QtDir "%QT_ROOT_DIR%" -Version %VER%
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: StereoFlow-portable
+          path: dist/*
+
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/*.exe
+            dist/*.zip
+          generate_release_notes: true

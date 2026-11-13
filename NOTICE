@@ -1,0 +1,25 @@
+StereoFlow
+Copyright 2026 DRwander (GitHub: @DRwander84)
+https://github.com/DRwander84/StereoFlow
+
+This product includes software developed by DRwander (@DRwander84).
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+If you redistribute StereoFlow, in source or binary form, modified or not, you must:
+  1. keep this NOTICE file (or its text) with your distribution,
+  2. keep the copyright and attribution above,
+  3. state clearly if you changed the files (for example "Modified by <name>"),
+  4. make it visible where the program comes from: the original author and
+     the original repository, in your README, About screen or release notes.
+
+Third-party software
+--------------------
+Qt 6 (Widgets, Core, Gui) - Copyright The Qt Company Ltd. and other contributors.
+  Used under the GNU Lesser General Public License v3 (LGPLv3), linked dynamically:
+  the Qt DLLs shipped next to StereoFlow.exe can be replaced by your own build of Qt.
+  License text and sources: https://www.qt.io/licensing/ and https://download.qt.io/
+
+Microsoft Visual C++ runtime - redistributed under the Microsoft Visual C++ Redistributable terms.
+
+Inter font (optional, only if you add the .ttf files yourself) - SIL Open Font License 1.1, https://rsms.me/inter/

@@ -1,0 +1,32 @@
+#include <winver.h>
+
+// Icon of StereoFlow.exe (Explorer, taskbar, Alt+Tab). Same logo as the title bar of the app.
+IDI_ICON1 ICON "StereoFlow.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_APP
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "DRwander (@DRwander84)"
+            VALUE "FileDescription", "StereoFlow"
+            VALUE "FileVersion", "1.0.0"
+            VALUE "InternalName", "StereoFlow"
+            VALUE "LegalCopyright", "Copyright 2026 DRwander (@DRwander84). Apache License 2.0"
+            VALUE "OriginalFilename", "StereoFlow.exe"
+            VALUE "ProductName", "StereoFlow"
+            VALUE "ProductVersion", "1.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
