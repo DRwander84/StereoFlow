@@ -24,10 +24,6 @@ Output in `dist\`:
 * `StereoFlow-1.0.0-win64-portable.exe` (portable, unpacks into a folder you pick)
 * `StereoFlow-1.0.0-win64-portable.zip` (portable zip)
 
-## Recommended Channel
-
-By visiting the [PC Gaming Hub](https://t.me/pcgaminghub) Telegram channel, you can follow the latest gaming and technology news.
-
 ## Donation
 
 If you would like to support me, you can send a donation to the following address:
